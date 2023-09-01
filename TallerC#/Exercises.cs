@@ -5,15 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TallerC_
-{
+{   
     public class Exercises
     {
 
-        public static Person AgedRut(List<Person> persons)
+        public static void Get(Person person)
         {
-            var query = persons.OrderBy(o => o.Rut).FirstOrDefault();
-
-            return query;
+            Console.WriteLine($"{person.Name}");
         }
 
         //aqui agregan metodo

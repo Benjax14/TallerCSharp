@@ -5,15 +5,10 @@
         static void Main(string[] args)
         {
 
-            var data = new Data();
+            var person = new Person("Pepe","20.123.213-3" );
 
-            data.Poblate();
+            Exercises.Get(person);
 
-            //data.Show();
-
-            Person person = Exercises.AgedRut(data.Persons);
-
-            Console.WriteLine($"Oldest Rut is for {person.Name}, {person.Rut} ");
         }
     }
 }
